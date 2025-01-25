@@ -1,89 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zerostations</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2em;
-            color: #aaa;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        .content-section {
-            margin: 40px 0;
-        }
-        .content-section h2 {
-            font-size: 2em;
-            color: #000;
-        }
-        .content-section p {
-            font-size: 1.2em;
-            color: #555;
-        }
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .btn {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 1em;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #444;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Stations - Your AI Assistant</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 80vh;
+      background: linear-gradient(to bottom, #000, #222);
+      color: #fff;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .hero button:hover {
+      transform: scale(1.1);
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .features {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .features h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .feature {
+      margin: 20px auto;
+      max-width: 800px;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slideUp 1.5s ease-in-out;
+    }
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Zerostations</h1>
-        <p>Your Control Station for Local AI</p>
-    </header>
-    <main>
-        <div class="content-section">
-            <h2>What is Zerostations?</h2>
-            <p>Zerostations brings the power of Artificial Intelligence directly to your personal or private devices. Secure, autonomous, and built for you.</p>
-        </div>
-        <div class="content-section">
-            <h2>Why Choose Zerostations?</h2>
-            <p>Our solution allows factories and individuals to deploy multiple autonomous stations running advanced AI, seamlessly integrated into your workflow.</p>
-        </div>
-        <div class="content-section">
-            <a href="#" class="btn">Learn More</a>
-        </div>
-    </main>
-    <footer>
-        &copy; 2025 Zerostations. All Rights Reserved.
-    </footer>
+  <header>
+    <h1>Zero Stations</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Empowering Your Productivity with AI</h2>
+      <p>Control tasks, automate workflows, and chat with your personal assistant seamlessly.</p>
+      <button>Get Started</button>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <h3>Core Features</h3>
+    <div class="feature">
+      <h4>Task Automation</h4>
+      <p>Streamline your daily activities with advanced AI-driven automation.</p>
+    </div>
+    <div class="feature">
+      <h4>Intelligent Conversations</h4>
+      <p>Communicate naturally with your assistant for real-time problem solving.</p>
+    </div>
+    <div class="feature">
+      <h4>Seamless Integration</h4>
+      <p>Connect with local and cloud platforms to synchronize workflows effortlessly.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zero Stations. All rights reserved.</p>
+  </footer>
 </body>
 </html>
